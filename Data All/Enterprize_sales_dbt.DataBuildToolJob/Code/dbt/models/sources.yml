@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: Source
+    database: "{{ target.database }}"  
+    schema: Source                         
+    tables:
+      - name: DimCustomer
+      - name: DimProduct
+      - name: DimGeography
+      - name: FactSales
