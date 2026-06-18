@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: silver_dim_customer
+    description: "Customer dimension table with split first and last names."
+    columns:
+      - name: CustomerID
+        tests:
+          - unique
+          - not_null
+      - name: FirstName
+        tests:
+          - not_null
+
+  - name: silver_dim_product
+    description: "Product dimension with calculated potential profit margins."
+    columns:
+      - name: ProductID
+        tests:
+          - unique
+          - not_null
+
+  - name: silver_dim_geography
+    description: "Geography dimension with consolidated full location path."
+    columns:
+      - name: GeographyID
+        tests:
+          - unique
+          - not_null

@@ -5,7 +5,7 @@
   },
   "profile": {
     "profileType": "DataWarehouse",
-    "schema": "bronze",
+    "schema": "dbo",
     "connectionSettings": {
       "name": "Enterprise_Sales_WareHouse",
       "properties": {

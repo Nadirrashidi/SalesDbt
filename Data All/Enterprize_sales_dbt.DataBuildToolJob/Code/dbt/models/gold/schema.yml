@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: gold_reporting_sales
+    description: "One Big Table (OBT) combining Sales, Customer, Product, and Geography for Power BI Reporting."
+    columns:
+      - name: SalesLineID
+        tests:
+          - unique
+          - not_null
+      - name: OrderDate
+        tests:
+          - not_null
